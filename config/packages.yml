@@ -1,0 +1,54 @@
+# CLI Tools and Dependencies Configuration
+# Organized by category for better maintainability
+
+# Version Control & Core Tools
+version_control:
+  - git
+
+# Programming Languages & Runtimes
+languages:
+  - python
+  - node
+  - rust
+
+# Build Tools & Compilers
+build_tools:
+  - make
+
+# Text Editors & IDEs
+editors:
+  - nvim
+
+# File Management & Navigation
+file_tools:
+  - ripgrep
+  - yazi
+  - autojump
+
+# DevOps & Container Tools
+devops:
+  - kubectl
+
+# Archive & Compression
+archive_tools:
+  - p7zip
+
+# System Information (optional)
+system_info:
+  - macchina
+  - onefetch
+  - btop
+
+# Additional tools for specific workflows
+# Uncomment as needed:
+# databases:
+#   - postgresql
+#   - redis
+# 
+# cloud_tools:
+#   - aws-cli
+#   - terraform
+# 
+# monitoring:
+#   - htop
+#   - neofetch

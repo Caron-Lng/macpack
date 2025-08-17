@@ -1,0 +1,94 @@
+# General Settings Configuration
+
+# Installation Behavior
+installation:
+  # Continue on errors during package installation
+  continue_on_error: true
+  
+  # Create backups before modifying configuration files
+  create_backups: true
+  
+  # Verbose output during installation
+  verbose: false
+  
+  # Timeout for network operations (seconds)
+  network_timeout: 300
+
+# Git Configuration
+git:
+  # Prompt for git configuration during setup
+  configure_git: true
+  
+  # Default git configuration (will be overridden by user input)
+  default_name: ""
+  default_email: ""
+
+# SSH Configuration
+ssh:
+  # Prompt for SSH key generation
+  setup_ssh: true
+  
+  # SSH key type
+  key_type: "ed25519"
+  
+  # SSH key location
+  key_path: "~/.ssh/id_ed25519"
+
+# Shell Configuration
+shell:
+  # Default shell to configure
+  default_shell: "zsh"
+  
+  # Install Oh My Zsh
+  install_oh_my_zsh: true
+  
+  # Oh My Zsh theme
+  theme: "powerlevel10k/powerlevel10k"
+  
+  # Zsh plugins to install
+  plugins:
+    - git
+    - zsh-autosuggestions
+    - zsh-syntax-highlighting
+    # - autojump
+
+# Development Environment
+development:
+  # Install LunarVim
+  install_lunarvim: true
+  
+  # Install Flutter SDK
+  install_flutter: true
+  
+  # Flutter installation path
+  flutter_path: "~/flutterSDK/flutter"
+  
+  # Install Nerd Fonts helper
+  install_nerd_fonts: true
+
+# Container Tools
+containers:
+  # Setup Podman
+  setup_podman: true
+  
+  # Initialize Podman machine
+  init_podman_machine: true
+
+# Backup Locations
+backup:
+  # Directory for configuration backups
+  backup_dir: "~/.macpack-backups"
+  
+  # Keep backups for this many days
+  retention_days: 30
+
+# Logging
+logging:
+  # Log file location
+  log_file: "~/.macpack.log"
+  
+  # Log level (debug, info, warn, error)
+  log_level: "info"
+  
+  # Enable timestamps in logs
+  timestamps: true

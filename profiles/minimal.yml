@@ -1,0 +1,44 @@
+# Minimal Development Profile
+# Essential tools for basic development work
+
+name: "Minimal Development Setup"
+description: "Basic development tools and essential applications"
+
+# Override default settings for minimal setup
+settings:
+  installation:
+    continue_on_error: true
+  development:
+    install_lunarvim: true
+    install_flutter: false
+  containers:
+    setup_podman: false
+
+# CLI packages to install
+packages:
+  version_control:
+    - git
+  languages:
+    - python
+  editors:
+    - nvim
+  file_tools:
+    - ripgrep
+
+# GUI applications to install
+casks:
+  development:
+    - iterm2
+    - visual-studio-code
+  productivity:
+    - raycast
+
+# Components to install (in order)
+components:
+  - homebrew
+  - xcode_tools
+  - cli_tools
+  - cask_apps
+  - zsh_setup
+  - lunarvim
+  - git_ssh

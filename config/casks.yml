@@ -1,0 +1,57 @@
+# GUI Applications Configuration
+# Organized by category for better maintainability
+
+# Essential Development Tools
+development:
+  - iterm2
+  - visual-studio-code
+
+# Productivity & Utilities
+productivity:
+  - raycast
+  # - alt-tab
+  - betterdisplay
+  - appcleaner
+  - jordanbaird-ice
+
+# Security & Privacy
+security:
+  - tailscale
+  - protonvpn
+  - lulu
+
+# System Utilities
+system:
+  - aldente
+
+# Development Environments (optional)
+dev_environments:
+  # - android-studio
+  # - podman-desktop
+
+# Web Browsers
+browsers:
+  # - google-chrome
+  # - firefox
+  # - safari-technology-preview
+
+# Design & Creative Tools
+# design:
+#   - figma
+#   - sketch
+#   - adobe-creative-cloud
+
+# Communication
+# communication:
+#   - slack
+#   - discord
+#   - zoom
+
+# Additional categories for specific workflows:
+# databases:
+#   - tableplus
+#   - sequel-pro
+# 
+# api_tools:
+#   - postman
+#   - insomnia

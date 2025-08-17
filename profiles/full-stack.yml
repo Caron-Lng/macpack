@@ -1,0 +1,93 @@
+# Full Stack Development Profile
+# Complete development environment for full-stack development
+
+name: "Full Stack Development Setup"
+description: "Comprehensive development environment with all tools and applications"
+
+# Use all default settings
+settings: {}
+
+# All CLI packages
+packages:
+  version_control:
+    - git
+  languages:
+    - python
+    - node
+    - rust
+  build_tools:
+    - make
+  editors:
+    - nvim
+  file_tools:
+    - ripgrep
+    - yazi
+    - autojump
+  devops:
+    - kubectl
+  archive_tools:
+    - p7zip
+
+# Additional full-stack tools (includes web dev, mobile dev, and more)
+additional_packages:
+  # Web development tools
+  - yarn
+  - pnpm
+  - typescript
+  - eslint
+  - prettier
+  # Mobile development tools
+  - cocoapods
+  - fastlane
+  - android-platform-tools
+  # DevOps and cloud tools
+  - docker
+  - terraform
+  - aws-cli
+  # Database tools
+  - postgresql
+  - redis
+
+# All GUI applications
+casks:
+  development:
+    - iterm2
+    - visual-studio-code
+  productivity:
+    - raycast
+    - alt-tab
+    - betterdisplay
+  security:
+    - lulu
+  dev_environments:
+    - android-studio
+    - podman-desktop
+  browsers:
+    - google-chrome
+
+# Additional full-stack casks (includes web dev, mobile dev, and more)
+additional_casks:
+  # Web development apps
+  - figma
+  - postman
+  # Mobile development apps
+  - xcode
+  - simulator
+  - flipper
+  # Communication and productivity
+  - tableplus
+  - slack
+  - zoom
+
+# All components
+components:
+  - homebrew
+  - xcode_tools
+  - cli_tools
+  - cask_apps
+  - zsh_setup
+  - nerd_fonts
+  - lunarvim
+  - flutter
+  - git_ssh
+  - podman
