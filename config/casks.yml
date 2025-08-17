@@ -9,7 +9,7 @@ development:
 # Productivity & Utilities
 productivity:
   - raycast
-  # - alt-tab
+  - alt-tab
   - betterdisplay
   - appcleaner
   - jordanbaird-ice
@@ -26,12 +26,12 @@ system:
 
 # Development Environments (optional)
 dev_environments:
-  # - android-studio
-  # - podman-desktop
+  - android-studio
+  - podman-desktop
 
 # Web Browsers
 browsers:
-  # - google-chrome
+  - google-chrome
   # - firefox
   # - safari-technology-preview
 

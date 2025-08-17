@@ -12,7 +12,7 @@ settings:
     install_lunarvim: true
     install_flutter: false
   containers:
-    setup_podman: false
+    setup_podman: true
 
 # CLI packages to install
 packages:
@@ -20,10 +20,21 @@ packages:
     - git
   languages:
     - python
+    - node
+    - rust
+  build_tools:
+    - make
   editors:
     - nvim
   file_tools:
     - ripgrep
+    - yazi
+    - autojump
+  devops:
+    - kubectl
+    - podman
+  archive_tools:
+    - p7zip
 
 # GUI applications to install
 casks:
@@ -32,6 +43,15 @@ casks:
     - visual-studio-code
   productivity:
     - raycast
+    # - betterdisplay
+    # - appcleaner
+    - jordanbaird-ice
+  security:
+    - tailscale
+    # - protonvpn
+    # - lulu
+  system:
+    - aldente
 
 # Components to install (in order)
 components:
@@ -42,3 +62,4 @@ components:
   - zsh_setup
   - lunarvim
   - git_ssh
+  - podman

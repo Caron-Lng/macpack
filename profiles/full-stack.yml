@@ -25,6 +25,7 @@ packages:
     - autojump
   devops:
     - kubectl
+    - podman
   archive_tools:
     - p7zip
 
@@ -41,7 +42,6 @@ additional_packages:
   - fastlane
   - android-platform-tools
   # DevOps and cloud tools
-  - docker
   - terraform
   - aws-cli
   # Database tools

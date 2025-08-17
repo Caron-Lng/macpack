@@ -28,6 +28,7 @@ file_tools:
 # DevOps & Container Tools
 devops:
   - kubectl
+  - podman
 
 # Archive & Compression
 archive_tools:

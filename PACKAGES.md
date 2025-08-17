@@ -20,6 +20,7 @@ Essential development tools and applications for a clean, focused setup.
 | yazi | Terminal file manager | File navigation and management | [github.com/sxyazi/yazi](https://github.com/sxyazi/yazi) |
 | autojump | Smart directory navigation | Quick directory jumping | [github.com/wting/autojump](https://github.com/wting/autojump) |
 | kubectl | Kubernetes command-line tool | Container orchestration management | [kubernetes.io/docs/reference/kubectl](https://kubernetes.io/docs/reference/kubectl/) |
+| podman | Container engine | Docker-compatible container runtime | [podman.io](https://podman.io/) |
 | p7zip | 7-Zip file archiver | Archive creation and extraction | [7-zip.org](https://www.7-zip.org/) |
 
 ### GUI Applications
@@ -103,3 +104,23 @@ Everything from Minimal profile plus comprehensive tools for web, mobile, and De
 - All packages are installed via Homebrew for consistency and easy management
 - GUI applications are installed as Homebrew Casks
 - Some packages may have additional dependencies that are automatically handled by Homebrew
+
+## How Profiles and Config Files Work Together
+
+**Config Files** (`config/packages.yml` and `config/casks.yml`):
+
+- Define ALL available packages organized by category
+- Serve as the master catalog of tools
+- Can be customized to add/remove available options
+
+**Profile Files** (`profiles/minimal.yml` and `profiles/full-stack.yml`):
+
+- Reference specific packages from the config files
+- Override which tools actually get installed
+- Profiles take precedence over config files
+
+**No Conflicts**: Profiles select FROM the config files, so:
+
+- If a package is in config but not in your chosen profile → NOT installed
+- If a package is in your profile but not in config → Installation will fail
+- Best practice: Keep config files comprehensive, customize via profiles
